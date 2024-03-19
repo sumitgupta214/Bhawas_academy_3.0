@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./HOMETEST.css">
     <title>BHAWAS AN INSPIRATION</title>
     <link rel="icon" href="./Assets/actual-logo-BA-noBg.png">
 </head>
@@ -42,52 +42,58 @@
             </p>
         </div>
 
-        <div class="msg-info" data-aos="fade-right" data-aos-offset="350" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
-            <h1>Director's Message </h1>
 
-            <p>
-                Welcome forward to a year filled with fun, frolic and learning experiences that will make preschool really wonderful. Let us be partners in this enriching experience to get the best for your child. Our school motto is Learn, Lead, and Achieve. this is best achieved through students, parents, teachers and communit Working together to deliver the best educational opportunities.
+        <div class="right-con-box">
 
-                Bhawa's Academy school is a school with a future focus and a youthful optimism. Our caring relationship with student and partnership with parents provideus with the best opportunity to deliver an education that challenges every student to live our motto "Learn, Lead and Achieve
-                <br><br>
+            <div class="msg-right" data-aos="fade-left" data-aos-offset="400" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
+                <h1>Director's Message </h1>
 
-                <b>Regards Kuldeep Gumasta Managing Diretor</b>
-            </p>
+                <p>
+                    Welcome forward to a year filled with fun, frolic and learning experiences that will make preschool really wonderful. Let us be partners in this enriching experience to get the best for your child. Our school motto is Learn, Lead, and Achieve. this is best achieved through students, parents, teachers and communit Working together to deliver the best educational opportunities.
+
+                    Bhawa's Academy school is a school with a future focus and a youthful optimism. Our caring relationship with student and partnership with parents provideus with the best opportunity to deliver an education that challenges every student to live our motto "Learn, Lead and Achieve
+                    <br><br>
+
+                    <b>Regards Kuldeep Gumasta Managing Diretor</b>
+                </p>
+            </div>
+
+            <div class="notices" data-aos="fade-left" data-aos-offset="400" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
+
+                <h1>Notice</h1>
+                <hr>
+                <div class="notice-box">
+                    <ul>
+                        <?php
+                        $query = "SELECT * FROM `link set`;";
+
+                        // FETCHING DATA FROM DATABASE 
+                        $result = $db->query($query);
+
+                        if ($result->num_rows > 0) {
+                            // OUTPUT DATA OF EACH ROW 
+                            while ($row = $result->fetch_assoc()) {
+                        ?>
+                                <li><?php echo $row['Date']; ?> &nbsp; <?php echo "<a href='" . $row['Link'] . "'>" . $row['Title'] . "</a>"; ?> </li>
+                        <?php
+
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+
+                        $db->close();
+                        ?>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
 
     </div>
 
-    <div class="notices" data-aos="fade-left" data-aos-offset="400" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
 
-        <h1>Notice</h1>
-        <hr>
-        <div class="notice-box">
-            <ul>
-                <?php
-                $query = "SELECT * FROM `link set`;";
-
-                // FETCHING DATA FROM DATABASE 
-                $result = $db->query($query);
-
-                if ($result->num_rows > 0) {
-                    // OUTPUT DATA OF EACH ROW 
-                    while ($row = $result->fetch_assoc()) {
-                ?>
-                        <li><?php echo $row['Date']; ?> &nbsp; <?php echo "<a href='" . $row['Link'] . "'>" . $row['Title'] . "</a>"; ?> </li>
-                <?php
-
-                    }
-                } else {
-                    echo "0 results";
-                }
-
-                $db->close();
-                ?>
-            </ul>
-        </div>
-    </div>
 
 
 
