@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* .top-page{
+            width: 100%;
+            box-shadow: 0px 5px .5rem black;
+        } */
+
+
+        .top-page .nav {
+            align-items: center;
+            height: 90px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+
+
+        }
+
+        .top-page .nav .logo,
+        .container {
+            margin: 10px 20px 10px 20px;
+            padding: 10px;
+        }
+
+        .nav-opt {
+            display: flex;
+            list-style: none;
+            margin-right: 70px;
+
+        }
+
+        .logo a img {
+            position: absolute;
+            top: -0%;
+            z-index: 2;
+            margin-left: 10px;
+            height: 160px;
+            width: 230px;
+            /* mix-blend-mode: multiply; */
+            border-radius: 30px;
+        }
+
+        .nav-opt li a {
+            text-decoration: none;
+            color: #000;
+            margin: 5px;
+        }
+
+        .nav-opt li {
+            padding: 5px;
+            font-size: 17px;
+            font-weight: 800;
+            font-family: 'Nunito', sans-serif;
+            list-style-type: none;
+            margin-left: 50px;
+        }
+
+        .nav-opt li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .nav-opt li i {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        /* .nav-opt li input {
+            display: none;
+        } */
+
+        .menu-bar {
+            display: none;
+        }
+
+
+
+        .nav-opt li:after {
+            content: '';
+            margin: auto;
+            display: block;
+            height: 4px;
+            border-radius: 5px;
+            width: 0%;
+            background-color: transparent;
+            transition: width 0.5s ease, background-color 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        .nav-opt li:hover:after {
+            width: 100%;
+            background-color: yellow;
+        }
+
+        #gg {
+
+            text-align: center;
+            min-height: 80px;
+            background-color: #2e7e44;
+            color: #fff;
+            padding: 10px;
+            font-family: sans-serif;
+            position: relative;
+            border-bottom: 4px yellow solid;
+        }
+
+        #gg h1 {
+            margin-top: 6px;
+            font-size: 35px;
+            margin-left: 25%;
+        }
+
+        #zzz {
+            width: 200px;
+        }
+
+        #zzz ul {
+            position: absolute;
+            z-index: 1;
+            top: 20%;
+            left: 65%;
+            width: 180px;
+            /* background-color: #2e7e44; */
+            background-color: #fff;
+            /* border: 2px solid #000; */
+            border-radius: 12px;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.281);
+        }
+
+        #zzz ul li {
+            padding: 8px;
+            list-style: none;
+            /* border-bottom: #000 2px solid; */
+            text-align: center;
+            /* border-radius: 8px; */
+
+        }
+
+        #zzz ul li a {
+            padding: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #000;
+            font-family: sans-serif;
+            font-weight: 200;
+
+        }
+
+        #zzz ul li:hover {
+            background-color: #00000017;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'tahoma'
+        }
+
+        nav {
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            /* background: #37bc9b; */
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            /* float: left; */
+            display: inline-block;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 20px 0 0;
+            display: inline-block;
+        }
+
+        li>a:after {
+            content: ' »';
+        }
+
+        /* Change this in order to change the Dropdown symbol */
+
+        li>a:only-child:after {
+            content: '';
+        }
+
+        nav ul li a {
+            padding: 20px;
+            display: inline-block;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.5;
+        }
+
+        nav ul li ul {
+            z-index: 2;
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+
+        nav ul li ul a {
+            color: #000;
+        }
+
+        nav ul li ul li {
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        #mobile-res {
+            display: none;
+        }
+
+        @media only screen and (max-width:860px) {
+
+            .top-page {
+                display: none;
+            }
+
+            .logo-name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                padding-right: 90px;
+                background-color: #2e7e44;
+
+
+            }
+
+            .logo-name .icon-logo-dev img {
+                height: 50px;
+                width: 75px;
+            }
+
+            .logo-name h4 {
+                font-size: 12px;
+                color: #fff;
+                font-weight: 600;
+                font-family: sans-serif;
+            }
+
+            .bar {
+                position: absolute;
+                top: 19px;
+                right: 24px;
+                cursor: pointer;
+            }
+
+            .x-mark {
+                position: absolute;
+                top: 19px;
+                right: 24px;
+                z-index: 2;
+                cursor: pointer;
+            }
+
+            #check {
+                display: none;
+            }
+
+            .list-items {
+                position: absolute;
+                right: 0px;
+                top: 65px;
+                width: 220px;
+                border-radius: 10px;
+                z-index: 2;
+
+
+            }
+
+            .list-items ul {
+                padding: 0;
+                background: #fff;
+                /* border: 2px solid #000; */
+                border-radius: 10px;
+                box-shadow: -7px 7px 15px 0px #000;
+
+            }
+
+            .list-items ul a {
+                text-decoration: none;
+
+            }
+
+            .list-items ul a li {
+                list-style-type: none;
+                color: #000;
+                padding: 22px;
+                border-radius: 5px;
+            }
+
+            .list-items ul a li {
+                /* border: 1px solid #fff; */
+                box-shadow: 0px 0px 5px 0px #000;
+            }
+
+            #mobile-res {
+                display: block;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-page">
+        <div id="gg">
+            <h1>BHAWA’S ACADEMY (HIGHER SECONDARY), GHANSORE</h1>
+        </div>
+        <div class="nav">
+            <div class="logo"><a href=""><img src="./Assets/actual-logo-BA.jpg" alt="No Img"></a></div>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="./index.php">HOME</a></li>
+                        <li><a href="./about.php">ABOUT</a></li>
+                        <li><a href="./gallery.php">GALLERY</a>
+                            <ul>
+                                <li><a href="./gallery.php#sports">SPORTS</a></li>
+                                <li><a href="./gallery.php#science-fest">SCIENCE</a></li>
+                                <li><a href="./gallery.php#idp_day">INDEPENDANCE DAY</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./facilities.php">FACILITIES</a></li>
+                        <li><a href="./contact.php">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <section id="mobile-res">
+        <div class="check-box">
+            <input type="checkbox" id="check" />
+        </div>
+
+        <div class="res-head-page">
+            <div class="logo-name">
+                <div class="icon-logo-dev"><img src="./Assets/actual-logo-BA-noBg.png" alt="">
+                </div>
+                <h4>BHAWA’S ACADEMY (HIGHER SECONDARY), GHANSORE</h4>
+            </div>
+            <div class="list-items">
+                <ul>
+                    <a href="./index.php">
+                        <li>HOME</li>
+                    </a>
+                    <a href="./about.php">
+                        <li>ABOUT US</li>
+                    </a>
+                    <a href="./gallery.php">
+                        <li>GALLERY</li>
+                    </a>
+                    <a href="./facilities.php">
+                        <li>FACILITIES</li>
+                    </a>
+                    <a href="./contact.php">
+                        <li>CONTACT US</li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div class="bar">
+
+                <label for="check"><img src="./Assets/bars-solid.svg" alt="" style="height: 35px; width: 35px;"></label>
+            </div>
+            <div class="x-mark">
+                <label for="check">
+                    <img src="./Assets/xmark-solid.svg" alt="" style="height: 35px; width: 35px;">
+                </label>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        let bar = document.querySelector('.bar');
+        let xmr = document.querySelector('.x-mark');
+        let itm = document.querySelector('.list-items');
+        itm.style.display = 'none';
+        xmr.style.display = 'none';
+
+        xmr.addEventListener('click', () => {
+            itm.style.display = 'none';
+            xmr.style.display = 'none';
+            bar.style.display = 'block';
+
+        });
+
+        bar.addEventListener('click', () => {
+            itm.style.display = 'block';
+            xmr.style.display = 'block';
+            bar.style.display = 'none';
+        });
+
+
+    </script>
+
+</body>
+
+</html>
