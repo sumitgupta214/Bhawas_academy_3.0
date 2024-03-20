@@ -137,6 +137,13 @@
 
 .fees-chart h2 {
     background-color: #50505024;
+    text-align: center;
+}
+
+.fee-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

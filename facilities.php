@@ -116,8 +116,10 @@
     <div class="fee-page">
         <div class="fees-chart">
             <h2>BHAWA'S ACADEMY HR. SEC. GHANSORE - FEES STRUCTURE (2024-25)</h2>
-
-            <img src="./Assets/Facilities/fees-24,25.png" alt="">
+            
+            <div class="fee-img">
+                <img src="./Assets/Facilities/fees-24,25.png" alt="">
+            </div>
         </div>
     </div>
 

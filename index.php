@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./Home.css">
     <title>BHAWAS AN INSPIRATION</title>
     <link rel="icon" href="./Assets/actual-logo-BA-noBg.png">
 </head>
@@ -22,11 +22,11 @@
 
     <?php include "./banner.html"; ?>
 
-    <div class="bottom-page" style="overflow-x: hidden;">
+    <div class="bottom-page" style="overflow: hidden;">
         <div class="msg-info" data-aos="fade-right" data-aos-offset="350" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
             <h1>FROM THE CHAIRMAN'S DESK </h1>
 
-            <p>
+            <p class="animated-text">
                 A child is a unique gift of God to humanity with a bundle of talents hidden inside. A teacher as a mentor, nurturer and an inspirer polishes the various talents and virtues of the child to make him or her, a responsible citizen of the society. Children are the future of the nation. So they should be taught the right values in life to develop the feeling of brotherhood and nationalism. <br><br>
                 I always ask myself, "What should be the first priority in a student's life?" The answer which I find is nothing but 'time'.
                 There are many factors which are responsible for one's success depends on how meticulously he or she plants the little time at his or her disposal to complete the plan of
@@ -41,11 +41,14 @@
                 <b>Mr. Shakti Singh (Our Motivator)</b>
             </p>
         </div>
+    </div>
 
-        <div class="msg-info" data-aos="fade-right" data-aos-offset="350" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
+    <div class="right-con-box">
+
+        <div class="msg-right" data-aos="fade-right" data-aos-offset="400" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
             <h1>Director's Message </h1>
 
-            <p>
+            <p class="animated-text">
                 Welcome forward to a year filled with fun, frolic and learning experiences that will make preschool really wonderful. Let us be partners in this enriching experience to get the best for your child. Our school motto is Learn, Lead, and Achieve. this is best achieved through students, parents, teachers and communit Working together to deliver the best educational opportunities.
 
                 Bhawa's Academy school is a school with a future focus and a youthful optimism. Our caring relationship with student and partnership with parents provideus with the best opportunity to deliver an education that challenges every student to live our motto "Learn, Lead and Achieve
@@ -55,140 +58,146 @@
             </p>
         </div>
 
+        <div class="notices" data-aos="fade-left" data-aos-offset="400" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
 
+            <h1>Notice</h1>
+            <hr>
+            <div class="notice-box">
+                <ul>
+                    <?php
+                    $query = "SELECT * FROM `link set`;";
 
+                    // FETCHING DATA FROM DATABASE 
+                    $result = $db->query($query);
+
+                    if ($result->num_rows > 0) {
+                        // OUTPUT DATA OF EACH ROW 
+                        while ($row = $result->fetch_assoc()) {
+                    ?>
+                            <li><?php echo $row['Date']; ?> &nbsp; <?php echo "<a href='" . $row['Link'] . "'>" . $row['Title'] . "</a>"; ?> </li>
+                    <?php
+
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+
+                    $db->close();
+                    ?>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="notices" data-aos="fade-left" data-aos-offset="400" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
 
-        <h1>Notice</h1>
-        <hr>
-        <div class="notice-box">
-            <ul>
-                <?php
-                $query = "SELECT * FROM `link set`;";
 
-                // FETCHING DATA FROM DATABASE 
-                $result = $db->query($query);
-
-                if ($result->num_rows > 0) {
-                    // OUTPUT DATA OF EACH ROW 
-                    while ($row = $result->fetch_assoc()) {
-                ?>
-                        <li><?php echo $row['Date']; ?> &nbsp; <?php echo "<a href='" . $row['Link'] . "'>" . $row['Title'] . "</a>"; ?> </li>
-                <?php
-
-                    }
-                } else {
-                    echo "0 results";
-                }
-
-                $db->close();
-                ?>
-            </ul>
+    <div class="hall-of-fame-poster">
+        <h1>Hall Of Fame</h1>
+        <div class="poster-img">
+            <img src="./Assets/HallofFame/hof1.jpg" alt="">
         </div>
     </div>
 
 
 
 
-    <div class="mts">
-        <h1>
-            List of Meritorious Students
-        </h1>
-    </div>
-    <div class="alignment-box" style="overflow-x: hidden;">
-        <div class="bw-top-ls" style="overflow: hidden;">
-            <div class="class-tops" data-aos="fade-up-right" data-aos-offset="350" data-aos-delay="7" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
-                <h2>ACADEMIC TOPPERS : 2022-23 </h2>
+    <div class="bottom-page">
 
-                <div class="for-xii">
-                    <h3>Class XII:</h3>
-                    <div class="grid-box">
-                        <div class="stu-grid">
-                            <img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt="">
-                            <p>Tanishka <br>Namdeo<br>(Grade - 92.60%)</p>
-                        </div>
-                        <div class="stu-grid">
-                            <img src="./Assets/Toppers/CHANDRAPRAKASH PATEL.jpg" alt="">
-                            <p>Chandraprakash <br>Patel<br>(Grade - 90.60%)</p>
-                        </div>
-                        <div class="stu-grid">
-                            <img src="./Assets/Toppers/SATENDRA SHIVHARE.jpg" alt="">
-                            <p>Satendra <br>Shivhare<br>(Grade - 89.00%)</p>
-                        </div>
-                        <div class="stu-grid">
-                            <img src="./Assets/Toppers/UDIT RAWAT.jpg" alt="">
-                            <p>Udit <br>Rawat<br>(Grade - 89.00%)</p>
-                        </div>
-                    </div>
+        <div class="mts">
+            <h1>
+                List of Meritorious Students
+            </h1>
+        </div>
+
+        <div class="toppers-list">
+            <div class="right-list">
+                <div class="toppers-title">
+                    <h2>ACADEMIC Toppers : 2022-23 <br>
+                        CLASS - XII</h2>
                 </div>
 
+                <div class="list-con-seq">
+                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <div class="text">Tanishka Namdeo<br> 92.60%</div>
+                </div>
+                <div class="list-con-seq">
+                    <span><img src="./Assets/Toppers/CHANDRAPRAKASH PATEL.jpg" alt=""></span>
 
+                    <div class="text">Chandraprakash Patel<br> 90.60%</div>
+                </div>
+                <div class="list-con-seq">
+                    <span><img src="./Assets/Toppers/SATENDRA SHIVHARE.jpg" alt=""></span>
 
-                <div class="for-x">
-                    <h3>Class X:</h3>
-                    <div class="grid-box">
-                        <div class="stu-grid">
-                            <img src="./Assets/Toppers/SHREYA AGRAWAL.jpg" alt="">
-                            <p>Shreya <br>Agrawal<br>(Grade - 97.80%)</p>
-                        </div>
-                        <div class="stu-grid">
-                            <img src="./Assets/Toppers/RANI KUSHWAHA.jpg" alt="">
-                            <p>Rani <br>Kushwaha<br>(Grade - 96.80%)</p>
-                        </div>
-                        <div class="stu-grid">
-                            <img src="./Assets/Toppers/ABHISHEK RAI.jpg" alt="">
-                            <p>Abhishek <br>Rai<br>(Grade - 94.42%)</p>
-                        </div>
-                        <div class="stu-grid">
-                            <img src="./Assets/Toppers/ADARSH RAJ NEMA.jpg" alt="">
-                            <p>Adarsh <br>Raj Nema<br>(Grade - 94.42%)</p>
-                        </div>
-                    </div>
+                    <div class="text">Satendra Shivhare<br> 89.00%</div>
+                </div>
+                <div class="list-con-seq">
+                    <span><img src="./Assets/Toppers/UDIT RAWAT.jpg" alt=""></span>
 
+                    <div class="text">Udit Rawat<br> 89.00%</div>
+                </div>
+
+                <div class="toppers-title">
+                    <h2>ACADEMIC Toppers : 2022-23 <br>
+                        CLASS - X</h2>
+                </div>
+
+                <div class="list-con-seq">
+                    <span><img src="./Assets/Toppers/SHREYA AGRAWAL.jpg" alt=""></span>
+
+                    <div class="text">Shreya Agrawal<br> 97.80%</div>
+                </div>
+                <div class="list-con-seq">
+                    <span><img src="./Assets/Toppers/RANI KUSHWAHA.jpg" alt=""></span>
+
+                    <div class="text">Rani Kushwaha<br> 96.80%</div>
+                </div>
+                <div class="list-con-seq">
+                    <span><img src="./Assets/Toppers/ABHISHEK RAI.jpg" alt=""></span>
+
+                    <div class="text">Abhishek Rai<br> 94.42%</div>
+                </div>
+                <div class="list-con-seq">
+                    <span><img src="./Assets/Toppers/ADARSH RAJ NEMA.jpg" alt=""></span>
+
+                    <div class="text">Adarsh Raj Nema<br> 94.42%</div>
                 </div>
 
             </div>
-        </div>
+            <div class="left-list">
+                <div class="toppers-title">
+                    <h2>SPORTS : 2022-23</h2>
+                </div>
+                <br>
+                <div class="list-con-seq">
+                    <span id="sport-img"><img src="./Assets/Toppers/OM SHARMA.jpg" alt=""></span>
 
+                    <div class="text">Om Sharma<br>(Class - XII) </div>
 
+                </div>
+                <div class="list-con-seq">
+                    <span id="sport-img"><img src="./Assets/Toppers/BASU DEV THAKUR.jpg" alt=""></span>
 
+                    <div class="text">Basu Dev Thakur<br>(Class - XII) </div>
+                </div>
+                <div class="list-con-seq">
+                    <span id="sport-img"><img src="./Assets/Toppers/SHREYANSH AGRAWAL.jpg" alt=""></span>
 
+                    <div class="text">Shreyansh Agrawal<br>(Class - XI)</div>
+                </div>
+                <div class="list-con-seq">
+                    <span id="sport-img"><img src="./Assets/Toppers/SANATAN LAKHERA.jpg" alt=""></span>
 
+                    <div class="text">Sanatan Lakhera<br>(Class - XI) </div>
+                </div>
+                <div class="list-con-seq">
+                    <span id="sport-img"><img src="./Assets/Toppers/KAJAL KURVETI.jpg" alt=""></span>
 
-        <div class="topper-sports">
-            <div class="sports-top" data-aos="fade-up-left" data-aos-offset="400" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false" style="overflow-x: hidden;">
-                <h2>SPORTS : 2022-23 </h2>
-                <div class="sports-box">
-                    <div class="for-xii ">
-                        <div class="for-sports-stu">
-                            <div class="stu-grid sports-grid">
-                                <img src="./Assets/Toppers/OM SHARMA.jpg" alt="">
-                                <p>Om Sharma<br>(Class - XII)</p>
-                            </div>
-                            <div class="stu-grid sports-grid">
-                                <img src="./Assets/Toppers/BASU DEV THAKUR.jpg" alt="">
-                                <p>Basu Dev Thakur<br>(Class - XII)</p>
-                            </div>
-                            <div class="stu-grid sports-grid">
-                                <img src="./Assets/Toppers/SHREYANSH AGRAWAL.jpg" alt="">
-                                <p>Shreyansh Agrawal<br>(Class - XI)</p>
-                            </div>
-                            <div class="stu-grid sports-grid">
-                                <img src="./Assets/Toppers/SANATAN LAKHERA.jpg" alt="">
-                                <p>Sanatan Lakhera<br>(Class - XI)</p>
-                            </div>
-                            <div class="stu-grid sports-grid">
-                                <img src="./Assets/Toppers/KAJAL KURVETI.jpg" alt="">
-                                <p>Kajal Kurveti<br>(Class - VIII)</p>
-                            </div>
-                            <div class="stu-grid sports-grid">
-                                <img src="./Assets/Toppers/SIDDHI BOPCHE.jpg" alt="">
-                                <p>Siddhi Bopche<br>(Class - VIII)</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="text">Kajal Kurveti<br>(Class - VIII)</div>
+                </div>
+                <div class="list-con-seq">
+                    <span id="sport-img"><img src="./Assets/Toppers/SIDDHI BOPCHE.jpg" alt=""></span>
+
+                    <div class="text">Siddhi Bopche<br>(Class - VIII) </div>
                 </div>
             </div>
         </div>
