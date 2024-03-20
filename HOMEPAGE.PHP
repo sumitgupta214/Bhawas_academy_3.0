@@ -117,44 +117,42 @@
 
                 <div class="list-con-seq">
                     <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
-                    <div class="text">
-                        TANISHKA NAMDEO <br>87.55%
-                    </div>
+                    <div class="text">Tanishka Namdeo<br> 92.60%</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/CHANDRAPRAKASH PATEL.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Chandraprakash Patel<br> 90.60%</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/SATENDRA SHIVHARE.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Satendra Shivhare<br> 89.00%</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/UDIT RAWAT.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Udit Rawat<br> 89.00%</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/SHREYA AGRAWAL.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Shreya Agrawal<br> 97.80%</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/RANI KUSHWAHA.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Rani Kushwaha<br> 96.80%</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/ABHISHEK RAI.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Abhishek Rai<br> 94.42%</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/ADARSH RAJ NEMA.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Adarsh Raj Nema<br> 94.42%</div>
                 </div>
 
             </div>
@@ -164,35 +162,35 @@
                 </div>
                 <br>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/OM SHARMA.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Om Sharma<br>(Class - XII) </div>
 
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/BASU DEV THAKUR.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Basu Dev Thakur<br>(Class - XII) </div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/SHREYANSH AGRAWAL.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Shreyansh Agrawal<br>(Class - XI)</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/SANATAN LAKHERA.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Sanatan Lakhera<br>(Class - XI) </div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/KAJAL KURVETI.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Kajal Kurveti<br>(Class - VIII)</div>
                 </div>
                 <div class="list-con-seq">
-                    <span><img src="./Assets/Toppers/TANISHKA NAMDEO.jpg" alt=""></span>
+                    <span><img src="./Assets/Toppers/SIDDHI BOPCHE.jpg" alt=""></span>
 
-                    <div class="text">TANISHKA NAMDEO <br>87.55% </div>
+                    <div class="text">Siddhi Bopche<br>(Class - VIII) </div>
                 </div>
             </div>
         </div>
