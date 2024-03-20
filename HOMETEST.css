@@ -7,6 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 
+
 }
 
 
@@ -185,6 +186,7 @@ body {
 .right-con-box {
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 
@@ -217,6 +219,7 @@ body {
     background-color: #4c9ea01c;
     box-shadow: 8px 5px 8px 5px rgba(0, 0, 0, 0.281);
     /* background-color: #eaf93e; */
+    margin: 0 0 20px 0;
 }
 
 
@@ -342,6 +345,8 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+
 }
 
 
@@ -425,6 +430,14 @@ body {
 
     .notices {
         width: 90%;
+    }
+
+    .poster-img img {
+        width: 90%;
+    }
+
+    .hall-of-fame-poster h1 {
+        font-size: 32px;
     }
 
 
